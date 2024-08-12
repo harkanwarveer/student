@@ -1,0 +1,91 @@
+/* Default Theme */
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  
+  header {
+    background-color: #76a7e7;
+    color: white;
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #bird-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .bird-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .bird-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #bird-display {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #bird-img {
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+  }
+  
+  /* Description box */
+  #bird-description {
+    font-size: 1.1em;
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #85b4f1;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 80%;
+    margin: 20px auto;
+    color: #333; /* Default text color */
+    margin-left: 0;
+  
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    background-color: #9062e6;
+    color: #f0f0f0;
+  }
+  
+  header.dark-theme {
+    background-color: #222;
+  }
+  
+  .bird-button.dark-theme {
+    background-color: #6c757d;
+  }
+  
+  .bird-button.dark-theme:hover {
+    background-color: #5a6268;
+  }
+  
+  #bird-img.dark-theme {
+    border-color: #f0f0f0;
+  }
+  
+  #bird-description.dark-theme {
+    border-color: #f0f0f0;
+    background-color: #555;
+    color: #f0f0f0; /* White text color for dark theme */
+  }
+  

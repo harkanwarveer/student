@@ -1,0 +1,120 @@
+:root {
+    --base-font-color: rgb(131, 148, 150);
+    --secondary-font-color: rgb(88, 110, 117);
+    --emphasised-font: rgb(147, 161, 161);
+  
+    --c-background-color: rgb(0, 43, 54);
+    --c-background-highlights: rgb(7, 54, 66);
+  
+    --c-yellow: rgb(181, 137, 0);
+    --c-orange: rgb(203, 75, 22);
+    --c-red: rgb(220, 50, 47);
+    --c-magenta: rgb(211, 54, 130);
+    --c-violet: rgb(108, 113, 196);
+    --c-blue: rgb(38, 139, 210);
+    --c-cyan: rgb(42, 161, 152);
+    --c-green: rgb(133, 153, 0);
+  }
+  
+  /* 1. Set the background color of the page */
+  body {
+    background-color: var(--c-background-color);
+    color: var(--base-font-color);
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  /* 2. Set the background color of the header and footer */
+  header, footer {
+    background-color: var(--c-background-highlights);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* 3. Set the text color in the main, footer, and header */
+  main, footer, header {
+    color: var(--base-font-color);
+  }
+  
+  /* 4. Style links in the article to be magenta */
+  article a {
+    color: var(--c-magenta);
+  }
+  
+  /* 5. Highlight links with orange on hover */
+  article a:hover {
+    color: var(--c-orange);
+  }
+  
+  /* 6. Create a border around each subsection of the article */
+  article h3,
+  article p {
+    border: 3px solid var(--c-cyan);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* 7. Align the Header in the center, set text size, and color */
+  header h1 {
+    color: var(--c-yellow);
+    font-size: 150%;
+    margin: 0;
+  }
+  
+  /* 8. Remove the bullet points from the unordered list in the nav section */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--c-background-highlights);
+  }
+  
+  /* 9. Align list items in the nav section to the center and apply a flex layout */
+  nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* 10. Color all text in the aside to c-green */
+  aside {
+    color: var(--c-green);
+  }
+  
+  /* All links in the aside should be c-red, except when hovered over */
+  aside a {
+    color: var(--c-red);
+  }
+  
+  aside a:hover {
+    color: var(--c-blue);
+  }
+  
+  /* 11. Set the maximum width of the page to 800px */
+  body {
+    max-width: 800px;
+  }
+  
+  /* 12. All headings within the article should have a top padding of 50px */
+  article h2,
+  article h3 {
+    padding-top: 50px;
+  }
+  
+  /* 13. Set the layout of the main content section */
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  article {
+    flex: 3;
+    padding-right: 20px;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
